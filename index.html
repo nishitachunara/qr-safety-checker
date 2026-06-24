@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Safety Checker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo">🔐</div>
+    <h1>QR Code Safety Checker</h1>
+    <p>Paste the URL from a QR code below to check if it's safe</p>
+
+    <input type="text" id="urlInput" placeholder="e.g. https://example.com" />
+    <button onclick="checkURL()">🔍 Check Safety</button>
+
+    <div id="result" class="result hidden"></div>
+
+    <div class="tips">
+      <h3>⚠️ Common QR Code Scams:</h3>
+      <ul>
+        <li>Fake payment QR codes in public places</li>
+        <li>QR codes that steal your login info</li>
+        <li>QR codes redirecting to malware sites</li>
+        <li>QR codes using URL shorteners to hide destination</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Made for Cybersecurity Internship Project 🛡️
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
